@@ -15,7 +15,7 @@ const About = () => {
   const [aboutImages, setAboutImages] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/picture/about")
+    fetch("https://bookstore-backend-6c1r.onrender.com/api/picture/about")
       .then((res) => res.json())
       .then((data) => setAboutImages(data))
       .catch((err) => console.error("Image fetch failed:", err));

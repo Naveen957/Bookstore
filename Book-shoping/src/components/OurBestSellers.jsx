@@ -22,7 +22,7 @@ const OurBestSellers = () => {
      const [homeImages, setHomeImages] = useState(null);
     
       useEffect(() => {
-        fetch("http://localhost:4000/api/picture/home")
+        fetch("https://bookstore-backend-6c1r.onrender.com/api/picture/home")
           .then((res) => res.json())
           .then((data) => setHomeImages(data))
           .catch((err) => console.error("Image fetch failed:", err));

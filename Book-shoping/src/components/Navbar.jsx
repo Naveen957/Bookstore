@@ -26,7 +26,7 @@ const totalQuantity = cart?.items?.reduce((total, item) => total + item.quantity
 
     const [logo,setLogo] = useState(null)
 useEffect(() => {
-  fetch("http://localhost:4000/api/logo")
+  fetch("https://bookstore-backend-6c1r.onrender.com/api/logo")
     .then((res) => res.blob())
     .then((blob) => {
       const imageUrl = URL.createObjectURL(blob);

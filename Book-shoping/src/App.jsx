@@ -6,7 +6,7 @@ import AboutPage from './pages/AboutPage'
 import BookPage from './pages/BookPage'
 import ContactPage from './pages/ContactPage'
 import Login from './components/Login'
-import Signup from './components/Signup'
+import Signup from './components/SignUp'
 
 function App() {
   return (

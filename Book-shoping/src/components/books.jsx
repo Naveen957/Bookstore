@@ -82,7 +82,7 @@ const books = () => {
           const [book, setBook] = useState([]);
         
           useEffect(() => {
-            fetch("hhttps://bookstore-backend-6c1r.onrender.com/api/picture/book")
+            fetch("https://bookstore-backend-6c1r.onrender.com/api/picture/book")
               .then((res) => res.json())
               .then((data) => setBook(data))
               .catch((err) => console.error("Image fetch failed:", err));
